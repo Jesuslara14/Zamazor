@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zamazor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="zamazor.png" type="image/x-icon">
+</head>
+<body>
+    <div class="sticky-top">
+        <div class="container bg-primary">
+            <p class="h1 text-light">Zamazor</p>
+        </div>
+        <nav class="navbar bg-dark navbar-expand-sm navbar-dark">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <a class="navbar-brand nav-item">
+                        <img src="zamazor.png" style="width:40px;" class="rounded-pill" onclick="changeTo('home')"> 
+                    </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="changeTo('shop')">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="changeTo('about')">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="changeTo('contact')">Contact Us!</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container p-5 my-5 bg-light border">
+        <div id="home">
+            <p class="display-4">Welcome to our happy shopping family!</p>
+            <p class="blockquote">
+                Welcome to the largest online shopping platform of the region! We sell all sorts of products from all partner companies
+                at affordable delivery prices. Tax is on us. Happy shopping!
+            </p>
+            <img src="averagemolessia.png" style="width: 250px;" class="rounded-pill img-thumbnail">
+        </div>
+        <div id="shop" style="display: none;">
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <img src="toast.png" class="card-img-top" style="width: 100%;">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-title">Toast</p>
+                        <p class="card-text">Some delicious industrial quality toast</p>
+                        <a class="btn btn-primary">Shop</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="ramen.png" class="card-img-top" style="width: 100%;">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-title">Ramen</p>
+                        <p class="card-text">Some delicious industrial quality ramen</p>
+                        <a class="btn btn-primary">Shop</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="rubber.png" class="card-img-top" style="width: 100%;">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-title">Rubber</p>
+                        <p class="card-text">Resistant, durable, reusable rubber for you to enjoy</p>
+                        <a class="btn btn-primary">Shop</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <img src="barsoap.png" class="card-img-top" style="width: 100%;">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-title">Bar Soap</p>
+                        <p class="card-text">Top tier quality bar soap in the region, sold in bulk</p>
+                        <a class="btn btn-primary">Shop</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="syringe.png" class="card-img-top" style="width: 100%;">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-title">Syringe</p>
+                        <p class="card-text">Empty syringes, industrial quality, sold in bulk</p>
+                        <a class="btn btn-primary">Shop</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="tylenol.png" class="card-img-top" style="width: 100%;">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-title">Paracetamol</p>
+                        <p class="card-text">Cheap medicine, helps stop the pain<br>sold in bulk</p>
+                        <a class="btn btn-primary">Shop</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="about" style="display: none;">
+            <div id="aboutGallery" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#aboutGallery" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#aboutGallery" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#aboutGallery" data-bs-slide-to="2"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-toggle="tooltip" title="Delivery Truck">
+                        <img src="delivery.png" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item" data-bs-toggle="tooltip" title="Our Warehouse">
+                        <img src="warehouse.png" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item"  data-bs-toggle="tooltip" title="You if you buy from us">
+                        <img src="shopper.png" class="d-block w-100">
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#aboutGallery" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#aboutGallery" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+            <div class="container p-5 my-5 border">
+                <p class="h2">Who are we?</p>
+                <p class="blockquote">We are a family founded business. We sell a lot of cool stuff and I mean a lot!</p>
+            </div>
+        </div>
+        <div id="contact" style="display: none;">
+            <p class="display-3" style="text-align: center;">Got something to say? Say it!</p>
+            <form>
+                <div class="mb-3 mt-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" id="name" class="form-control" placeholder="Benedict Dover">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" class="form-control" placeholder="BenDover420@yimeil.com">
+                    <label for="message" class="form-label">Details</label>
+                    <textarea id="message" class="form-control" style="resize: none; height: 200px"></textarea>
+                    <label for="rate" class="form-label">How good was your shopping experience?</label>
+                    <div id="rate">
+                        <img src="averagenonmolessia.png" style="width: 100px;" class="rounded-pill img-thumbnail">
+                        <input type="range" class="form-range" min="0" max="4" style="width: 500px;">
+                        <img src="averagemolessia.png" style="width: 100px;" class="rounded-pill img-thumbnail">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+    </div>
+</body>
+<script>
+    function changeTo(elementName){
+        document.getElementById('home').style.display = "none";
+        document.getElementById('shop').style.display = "none";
+        document.getElementById('about').style.display = "none";
+        document.getElementById('contact').style.display = "none";
+        document.getElementById(elementName).style.display = "block";
+    }
+</script>
+</html>
